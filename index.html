@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Animate on Scroll</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/aos.css">
+
+    <script src="js/vendor/modernizr.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="splash">
+        <p>This speech is my recital, I think it's very vital<br />To rock (A rhyme), that's right (On time)<br />It's Tricky is the title, here we go</p>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-left" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>It's tricky to rock a rhyme</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-right" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>to rock a rhyme</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-left" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>that's right on time</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-right" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>It's<br />tricky</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-left" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>It's tricky to rock a rhyme</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-right" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>to rock a rhyme</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-left" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>that's right on time</p>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <div data-aos="slide-right" data-aos-anchor-placement="top-center">
+          <div class="stroke"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>It's<br />tricky</p>
+        </div>
+    </div>
+
+    <div id="loading">
+      <p class="run">RUN<br />DMC</p>
+    </div>
+
+    <div class="loading-content">
+      <img class="img" src="img/big-image-1.jpg" alt="placement only" />
+      <img class="img" src="img/big-image-2.jpg" alt="placement only" />
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script>
+      AOS.init();
+      var statusElem = document.querySelector('.status');
+      imagesLoaded( document.querySelectorAll('.img'), function( instance ) {
+        document.querySelector('#loading').classList.add("fade");
+      });
+    </script>
+
+  </body>
+
+</html>
